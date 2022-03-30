@@ -6,17 +6,9 @@
 
 # In[2]:
 import os
-
-os.chdir(r'C:\Users\NaveenJoseph\Hunter Capital Limited Partnership\Firm - Documents\QUANTITATIVE\ScheduledJobs')
 exec(open("Generic.py").read()) ## this will bring all libraries and credentials in place 
 
 
-# In[3]:
-
-
-
-import os 
-os.chdir(r"C:\Users\NaveenJoseph\Hunter Capital Limited Partnership\Firm - Documents\QUANTITATIVE\ScheduledJobs")
 import time
 import sys 
 import pandas as pd
@@ -41,8 +33,8 @@ if datetime.datetime.today().weekday() in [3]: ## which is a thursday
 
 
 
-    if os.system('start "excel" "C:\\Users\\NaveenJoseph\\Hunter Capital Limited Partnership\\Firm - Documents\\QUANTITATIVE\\ScheduledJobs\\ManagementTurnover\\Management_Upper_US.xls"')==0:
-        os.system('start "excel" "C:\\Users\\NaveenJoseph\\Hunter Capital Limited Partnership\\Firm - Documents\\QUANTITATIVE\\ScheduledJobs\\ManagementTurnover\\Management_Upper_US.xls"')
+    if os.system('start "excel" "Management_Upper_US.xls"')==0:
+        os.system('start "excel" "Management_Upper_US.xls"')
     print("Already open so keep moving")
     template='Management_Upper_US.xls'
 
